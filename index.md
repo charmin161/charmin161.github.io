@@ -8,8 +8,6 @@ layout: page
 
 Here is **Yusong Min** [(Char, 闵雨松)].<br>
 
-## About
-
 > **Yusong Min** was born in 1996. He is a graduate student in school of automation at [Southeast University](https://www.seu.edu.cn/ "Southeast University") focusing on control science and engineering. His research interests include **electromagnetics, object detection**, **intelligent algorithm **and** optimization**.&#x20;
 
 ## Background
