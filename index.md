@@ -8,33 +8,15 @@ layout: page
 
 Here is **Yusong Min** [(Char, 闵雨松)].<br>
 
-I am a first-year PhD student in the [Internet of Everything Group](https://oba.eco/people/) at the University of Cambridge, supervised by [Prof. Ozgur Akan](https://oba.eco/) and [Dr. Kai Li](https://sites.google.com/site/lukasunsw/Home), and funded by the Cambridge Trust and CSC Scholarships. I also had the pleasure of participating in a summer research program with [Prof. Pietro Liò](https://www.cl.cam.ac.uk/~pl219/) in the [Artificial Intelligence Group](https://www.cl.cam.ac.uk/research/ai/).
+## About
 
-Prior to Cambridge, I have worked on wireless networks and cybersecurity under the guidance of [Prof. Zhezhuang Xu](https://scholar.google.com.hk/citations?user=iZ7LQRkAAAAJ&hl=zh-CN) and [Dr. Meng Yuan](https://myuan27.github.io/). Besides, I was honored to be selected as an outstanding undergraduate scholar at the leading AI conferences AAAI 2024 and SIGKDD 2024.
+> **Yusong Min** was born in 1996. He is a graduate student in school of automation at [Southeast University](https://www.seu.edu.cn/ "Southeast University") focusing on control science and engineering. His research interests include **electromagnetics, object detection**, **intelligent algorithm **and** optimization**.&#x20;
 
-If you are interested in any aspect of me, I am always open to discussions and academic collaborations. Feel free to reach out to me at — **hc663 [at] cam.ac.uk**
+## Background
 
----
+&#x20; 2020.06 - 2023.07    **M.E**., Southeast University, Nanjing, Jiangsu, China
+&#x20; 2019.09 - 2020.06   **B.E.**, Southeast University, Nanjing, Jiangsu, China
+&#x20; 2017.09 - 2019.09   **Soldier**, artillery, Jinzhou, Liaoning, China
+&#x20; 2014.09 - 2011.09   **B.E.**, Southeast University, Nanjing, Jiangsu, China
 
-## Research Interests
-
-- [Internet of Everything](https://scholar.google.com/citations?view_op=search_authors&hl=zh-CN&mauthors=label:internet_of_everything)
-- Internet of Agents
-- Wireless Communication
-- Federated Learning
-- Graph Representation
-
----
-
-## News and Updates
-
-- **May 2025**：Delighted to be selected as a winner of the 2025 Cambridge Trust and CSC Scholarship!
-- **June 2024**：Very excited to be selected as [KDD UC Scholar](https://kdd2024.kdd.org/undergraduate-consortium/). See you in Spain!
-- **April 2024：**Our work *BLEGuard* has been accepted to [MobiSys 2024](https://www.sigmobile.org/mobisys/2024/) as a poster paper. See you in Japan!
-- **March 2024：**Happy to receive a MPhil offer from Department of Engineering at Cambridge!
-- **Dec 2023：**Very excited to be selected as [AAAI UC Scholar](https://aaai.org/aaai-conference/undergraduate-consortium-program/). See you in Canada!
-
-<br>
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Thrilled to be an AAAI-UC Scholar at <a href="https://twitter.com/hashtag/AAAI24?src=hash&amp;ref_src=twsrc%5Etfw">#AAAI24</a>, thanks to <a href="https://twitter.com/hashtag/AAAI?src=hash&amp;ref_src=twsrc%5Etfw">#AAAI</a> &amp; <a href="https://twitter.com/hashtag/GoogleExploreCSR?src=hash&amp;ref_src=twsrc%5Etfw">#GoogleExploreCSR</a> for the sponsorship. Grateful for the knowledge gained and new friendships formed.<br><br>Wonderful trip in Vancouver. Looking forward to staying connected with all.<a href="https://twitter.com/hashtag/AAAI24?src=hash&amp;ref_src=twsrc%5Etfw">#AAAI24</a> <a href="https://twitter.com/hashtag/Vancouver?src=hash&amp;ref_src=twsrc%5Etfw">#Vancouver</a> <a href="https://twitter.com/hashtag/GoogleExploreCSR?src=hash&amp;ref_src=twsrc%5Etfw">#GoogleExploreCSR</a> <a href="https://t.co/wUQUp8XlSM">pic.twitter.com/wUQUp8XlSM</a></p>&mdash; Hanlin CAI (seeking a PhD position 2025) (@lancecai2002) <a href="https://twitter.com/lancecai2002/status/1762210025173344260?ref_src=twsrc%5Etfw">February 26, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+***
