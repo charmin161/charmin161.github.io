@@ -18,13 +18,13 @@ word embedding
 
 transformer&#x20;
 
-[【attention0】](https://charmin161.github.io/blogs/attention0/attention0.md "【attention0】")
+[【attention0】](https://charmin161.github.io/blogs/attention0/attention0 "【attention0】")
 
-[【attention1】MHA、MQA、GQA和MLA](https://charmin161.github.io/blogs/attention1/attention1.md "【attention1】MHA、MQA、GQA和MLA")
+[【attention1】MHA、MQA、GQA和MLA](https://charmin161.github.io/blogs/attention1/attention1 "【attention1】MHA、MQA、GQA和MLA")
 
-[【attention2】Flash Attention：从 V1 到 V4 的计算方法与优化之路](https://charmin161.github.io/blogs/attention2/attention2.md "【attention2】  Flash Attention：从 V1 到 V4 的计算方法与优化之路")
+[【attention2】Flash Attention：从 V1 到 V4 的计算方法与优化之路](https://charmin161.github.io/blogs/attention2/attention2 "【attention2】  Flash Attention：从 V1 到 V4 的计算方法与优化之路")
 
-[【attention3】deformable attention](https://charmin161.github.io/blogs/attention3/attention3.md "【attention3】deformable attention")
+[【attention3】deformable attention](https://charmin161.github.io/blogs/attention3/attention3 "【attention3】deformable attention")
 
 [【attention4】可训练稀疏注意力MoBA & NSA](https://charmin161.github.io/blogs/attention4/attention4.md "【attention4】可训练稀疏注意力MoBA & NSA")
 
