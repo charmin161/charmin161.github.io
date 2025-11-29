@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /blogs/attention4/attention2/index.html
+permalink: /blogs/attention2/attention2/index.html
 title: attention2
 ---
 # 【attention2】\*\* Flash Attention：从 V1 到 V4 的计算方法与优化之路\*\*

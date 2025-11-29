@@ -1,6 +1,5 @@
 ---
 layout: page
-permalink: /blogs/attention1/attention1/index.html
 title: attention1
 ---
 

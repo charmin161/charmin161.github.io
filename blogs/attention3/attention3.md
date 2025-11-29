@@ -1,6 +1,5 @@
 ---
 layout: page
-permalink: /blogs/attention3/attention3/index.html
 title: attention3
 ---
 
