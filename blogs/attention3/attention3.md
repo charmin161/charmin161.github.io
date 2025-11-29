@@ -1,3 +1,9 @@
+---
+layout: page
+permalink: /blogs/attention3/attention3/index.html
+title: attention3
+---
+
 # 【attention5】时序压缩与隐空间压缩MTLA
 
 Transformer架构的痛点：**Key-Value（KV）缓存**，该缓存的大小随着生成序列长度线性增长，逐渐成为影响推理效率的关键瓶颈。利用**注意力层的冗余性**，有很多地方可以挖，之前介绍的MLA、MoBA和NSA都是在**隐空间维度**对 KV 缓存进行压缩。除了这个维度，**时序维度**上（token和token之间的KV cache）也可以压缩。这篇剑桥的文章就是将这两个压缩同时使用（鉴于之前在隐空间的压缩已经很棒了，所以这篇文章主要的卖点还是时序压缩），加速模型推理速度。（相比MHA，在翻译任务中，实现了超过 5 倍的推理速度提升，并将推理过程中的 GPU 显存占用降低了超过 8 倍。）

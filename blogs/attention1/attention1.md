@@ -1,3 +1,9 @@
+---
+layout: page
+permalink: /blogs/attention1/attention1/index.html
+title: attention1
+---
+
 # 【attention1】MHA、MQA、GQA和MLA
 
 DeepSeek V3的大火，让我深入学习了MLA的结构、原理和公式，借此，重新整理下相关的MHA、MQA、GQA和MLA这一脉络。

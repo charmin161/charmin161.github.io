@@ -1,3 +1,9 @@
+---
+layout: page
+permalink: /blogs/attention4/attention4/index.html
+title: attention4
+---
+
 # 【attention4】可训练稀疏注意力MoBA & NSA
 
 之前的文中介绍了MLA的降秩操作，巧妙地利用attention结构中的冗余性，通过降秩的方案，减少KV cache，加快推理速度。

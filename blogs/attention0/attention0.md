@@ -1,3 +1,9 @@
+---
+layout: page
+permalink: /blogs/attention0/attention0/index.html
+title: attention0
+---
+
 # attention
 
 ### 1、attention本质是什么？
