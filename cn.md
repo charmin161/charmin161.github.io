@@ -6,28 +6,9 @@ title: 闵雨松的个人主页
 
 # 中文简历
 
-## 目录
-
-- [中文简历](#中文简历)
-  - [目录](#目录)
-- [工作经历](#工作经历)
-  - [中兴通讯 - 实习- 算法工程师](#中兴通讯---实习--算法工程师)
-  - [中兴通讯 - 算法工程师](#中兴通讯---算法工程师)
-- [项目经历](#项目经历)
-  - [**车辆计数（vehicle count）算法研究** - 算法工程师](#车辆计数vehicle-count算法研究---算法工程师)
-  - [**车脸重识别（vehicle re-id）算法研究** - 算法工程师](#车脸重识别vehicle-re-id算法研究---算法工程师)
-  - [**个人网站服务端** - c++开发工程师](#个人网站服务端---c开发工程师)
-- [教育](#教育)
-  - [东南大学](#东南大学)
-  - [东南大学](#东南大学-1)
-- [论文发表](#论文发表)
-    - [*A Vehicle Counting and Road Condition Analysis System Based on Multiple Object Tracking*](#a-vehicle-counting-and-road-condition-analysis-system-based-on-multiple-object-tracking)
-    - [*A Vehicle Comparison and Re-identification System Based on Residual Network* ](#a-vehicle-comparison-and-re-identification-system-based-on-residual-network-)
-- [兴趣爱好](#兴趣爱好)
 
 > 退伍军人，上海，东南大学本硕
 > 控制科学与工程，计算机，数学&#x20;
-> [English Resume](<../English Resume/English Resume.md> "English Resume")（英文简历）
 
 > `qiguai1619908@163.com`
 
