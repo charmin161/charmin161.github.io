@@ -26,9 +26,9 @@ transformer&#x20;
 
 [【attention3】deformable attention](https://charmin161.github.io/blogs/attention3/attention3 "【attention3】deformable attention")
 
-[【attention4】可训练稀疏注意力MoBA & NSA](https://charmin161.github.io/blogs/attention4/attention4.md "【attention4】可训练稀疏注意力MoBA & NSA")
+[【attention4】可训练稀疏注意力MoBA & NSA](https://charmin161.github.io/blogs/attention4/attention4 "【attention4】可训练稀疏注意力MoBA & NSA")
 
-[【attention5】时序压缩与隐空间压缩MTLA](https://charmin161.github.io/blogs/attention5/attention5.md "【attention5】时序压缩与隐空间压缩MTLA")
+[【attention5】时序压缩与隐空间压缩MTLA](https://charmin161.github.io/blogs/attention5/attention5 "【attention5】时序压缩与隐空间压缩MTLA")
 
 
 ### 训练infra
@@ -36,4 +36,4 @@ transformer&#x20;
 ### 训练过程
 
 #### 量化
-[量化](https://charmin161.github.io/blogs/quant/Quartet-MXFP4/Quartet-MXFP4.md "量化")
+[量化](https://charmin161.github.io/blogs/quant/Quartet-MXFP4/Quartet-MXFP4 "量化")
