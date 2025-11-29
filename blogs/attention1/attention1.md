@@ -2,13 +2,13 @@
 
 DeepSeek V3的大火，让我深入学习了MLA的结构、原理和公式，借此，重新整理下相关的MHA、MQA、GQA和MLA这一脉络。
 
-![](image/image_b4gMmXNjmf.png)
+![](https://charmin161.github.io/blogs/attention1/image/image_b4gMmXNjmf.png)
 
 ## 最初 MHA
 
 首先是transformer论文中提出，也是应用很广的MHA（**M**ulti-**H**ead**A**ttention），多头注意力机制。
 
-![](image/image_-jrMs8CRUx.png)
+![](https://charmin161.github.io/blogs/attention1/image/image_-jrMs8CRUx.png)
 
 其相当于多个单头注意力的拼接，对于LLAMA2-7b有 $h=4096,n=32,d_k=d_v=128$ ，
 
@@ -20,7 +20,7 @@ LLAMA2-70b则是 $h=8192,n=64,d_k=d_v=128$&#x20;
 
 ## 降本MQA
 
-![](image/image_LKfXd1Zul9.png)
+![](https://charmin161.github.io/blogs/attention1/image/image_LKfXd1Zul9.png)
 
 既然KV cache那么珍贵，那就少用一点，来个共享版：**M**ulti-**Q**uery**A**ttention
 
@@ -32,7 +32,7 @@ LLAMA2-70b则是 $h=8192,n=64,d_k=d_v=128$&#x20;
 
 ## 折中 GQA
 
-![](image/image_62AKSKdDCE.png)
+![](https://charmin161.github.io/blogs/attention1/image/image_62AKSKdDCE.png)
 
 既然每个Q用一个KV太多，一起用一个又不够，不如来个折中，一组用一个：**G**rouped-**Q**uery**A**ttention
 
@@ -52,7 +52,7 @@ deepseek v2和苏神从**低秩投影**的角度解释了MLA
 
 结合LoRA来解释低秩投影：
 
-![](image/image_o9o3I6zl-Y.png)
+![](https://charmin161.github.io/blogs/attention1/image/image_o9o3I6zl-Y.png)
 
 对于前向传播 $h=Wx，W\in \mathbb{R}^{d\times d}$ ，为了使用尽可能少的参数来训练，设置新的权重参数：
 
@@ -143,7 +143,7 @@ $q_i = [q_i(C) ,q_i(R)] = [xW_{dq}W_{qci}, xW_{dq}W_{qr}] = [c_{q}W_{qci},c_{q}W
 
 最后的结构如下：
 
-![](image/image_dcd7PFfo5I.png)
+![](https://charmin161.github.io/blogs/attention1/image/image_dcd7PFfo5I.png)
 
 参考：
 

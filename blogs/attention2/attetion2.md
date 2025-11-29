@@ -8,7 +8,7 @@ flash attention是从硬件的角度来加速训练过程的手段
 
 如下是A100的内存分布：
 
-![](image/image_iUDGGvAX-F.png)
+![](https://charmin161.github.io/blogs/attention2/image/image_iUDGGvAX-F.png)
 
 GPU中的SRAM访问速度更快但内存更小，attention的计算需要反复将数据从HBM传输到SRAM机型计算，再保存回HBM中。Flash attention希望可以一次性算完，然后返回HBM，减少读写次数。但因为SRAM空间太小，没办法一次性算完所有的数据，所以flash attention主要解决的是如何分块运算attention 模块
 
@@ -48,7 +48,7 @@ GPU中的SRAM访问速度更快但内存更小，attention的计算需要反复�
     - 在实际操作时，每一块先计算自己的最大值以及指数和，再通过递推公式，更新所有块的结果，保证所有块的计算结果都是全局的softmax。
 - **1.4 V1 算法流程图与伪代码展示**
 
-  ![](image/image_tP6Tqam2yk.png)
+  ![](https://charmin161.github.io/blogs/attention2/image/image_tP6Tqam2yk.png)
 
 ```python 
 def flash_attention(Q, K, V, block_size_q, block_size_k):
@@ -145,7 +145,7 @@ if __name__ == '__main__':
 
 原文中的算法流程如下：
 
-![](image/image_sR1wslGylo.png)
+![](https://charmin161.github.io/blogs/attention2/image/image_sR1wslGylo.png)
 
 1、设定分块大小：以A100为例，这里的on-chip SRAM of size $M$大小为192KB，每次SRAM中需要存下QKV和O，计算如下
 
@@ -191,10 +191,10 @@ $$
 
     v2 在序列长度上进行并行化，外循环可以放在不同tehrad block上
 
-    ![](image/image_wR3QWHdjxF.png)
+    ![](https://charmin161.github.io/blogs/attention2/image/image_wR3QWHdjxF.png)
 - **2.3 V2 的伪代码与流程示意图**
 
-  ![](image/image_xVflC29Jzh.png)
+  ![](https://charmin161.github.io/blogs/attention2/image/image_xVflC29Jzh.png)
   - 展示优化前后关键公式对比，图示说明内外循环置换的效果
   - 详细说明 thread block 的划分策略、并行调度方式
 

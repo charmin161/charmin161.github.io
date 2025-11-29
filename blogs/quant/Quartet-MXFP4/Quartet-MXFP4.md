@@ -2,7 +2,7 @@
 
 1、使用了一种基于量化训练过程中的scaling law的评价准则
 
-![](image/image_qFov33n5xH.png)
+![](https://charmin161.github.io/blogs/quant/Quartet-MXFP4/image/image_qFov33n5xH.png)
 
 其中 $eff_N(P_{forward})$ 是基于前向与参数相关的系数； $eff_D(P_{baskward})$ 是基于后向与数据相关的系数，这两个的取值范围都是（0，1]。
 
@@ -16,7 +16,7 @@
 
 2、基于这套准则进行实验，选择了MXFP4的最优量化方案：
 
-![](image/image_Ch5vA8JLjU.png)
+![](https://charmin161.github.io/blogs/quant/Quartet-MXFP4/image/image_Ch5vA8JLjU.png)
 
 1）前向使用Hadamard变换，相比AbsMax的归一化效果更好（ $eff_N$ 更大）
 

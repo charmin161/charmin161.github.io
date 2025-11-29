@@ -24,7 +24,7 @@ word embedding
 
 transformer&#x20;
 
-[attention0](attention0/attention0.md "attention")
+[【attention0】](https://charmin161.github.io/blogs/attention0/attention0.md "【attention0】")
 
 [【attention1】MHA、MQA、GQA和MLA](https://charmin161.github.io/blogs/attention1/attention1.md "【attention1】MHA、MQA、GQA和MLA")
 
