@@ -1,4 +1,4 @@
 # charmin.github.io
 
-a personal website based of charmin
+a personal website
 
