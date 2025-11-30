@@ -76,6 +76,8 @@ kramdown:
   math_engine_opts:
     preview: false                # 预览模式
     line_numbers: false          # 关闭行号
+  math_inline_delimiters: [['$', '$'], ['\\(', '\\)']]  # 行内公式分隔符
+  math_block_delimiters: [['$$', '$$'], ['\\[', '\\]']]  # 块级公式分隔符
 # pygments: true                 # Legacy option (Rouge supersedes this)
 
 
