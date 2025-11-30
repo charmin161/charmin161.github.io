@@ -158,8 +158,4 @@ $q_i = [q_i(C) ,q_i(R)] = [xW_{dq}W_{qci}, xW_{dq}W_{qr}] = [c_{q}W_{qci},c_{q}W
 
 [缓存与效果的极限拉扯：从MHA、MQA、GQA到MLA - 科学空间|Scientific Spaces](https://kexue.fm/archives/10091 "缓存与效果的极限拉扯：从MHA、MQA、GQA到MLA - 科学空间|Scientific Spaces")
 
-[arxiv.org/pdf/2405.04434](https://arxiv.org/pdf/2405.04434 "arxiv.org/pdf/2405.04434")
 
-c = xW\_c  (W\_c \in \mathbb{R}^{d \times d\_c}) 低秩
-\\\k = cW\_k (W\_k \in \mathbb(R)^{d\_c \times d\_k}) 线性
-\\\v = cW\_v (W\_v \in \mathbb(R)^{d\_c \times d\_v}) 线性
