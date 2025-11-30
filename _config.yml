@@ -69,6 +69,8 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
+  parse_block_html: true
+  parse_span_html: true
   enable_coderay: false
   math_engine: mathjax           # 启用MathJax渲染数学公式
   math_engine_opts:
