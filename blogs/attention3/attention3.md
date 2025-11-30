@@ -29,7 +29,7 @@ title: attention3
 
 ### DETR中的多头注意力
 
-![](https://charmin161.github.io/blogs/attention5/image/image_KxSOtVwWXR.png)
+![](https://charmin161.github.io/blogs/attention3/image/image_KxSOtVwWXR.png)
 
 DETR中的encoder和decoder都使用的是多头注意力机制，作者认为decoder中的多头注意力机制中的查询Q和每个K、V都做注意力运算，阻碍了训练速度。所以改成使用deformable attention，每个Q，只和一定范围内的KV，做运算。听着像不像swin transformer，不过deformable attention更进一步，这个和哪些KV做运算，是学习出来的。
 
@@ -41,11 +41,11 @@ $$
 z=\operatorname{Attention}(Q, K, V)=\operatorname{Softmax}\left(\frac{Q \cdot K^{T}}{\sqrt{d_{k}}}\right) \cdot V
 $$
 
-![](https://charmin161.github.io/blogs/attention5/image/image_SuJuXZLoRc.png)
+![](https://charmin161.github.io/blogs/attention3/image/image_SuJuXZLoRc.png)
 
 然后多几个头：
 
-![](https://charmin161.github.io/blogs/attention5/image/image_mgdnFIxdTl.png)
+![](https://charmin161.github.io/blogs/attention3/image/image_mgdnFIxdTl.png)
 
 然后还要接输出Wo,那计算方式就如下：
 
@@ -57,7 +57,7 @@ $$
 
 论文中的公式是这样的：
 
-![](https://charmin161.github.io/blogs/attention5/image/image_D5o3YxxVQq.png)
+![](https://charmin161.github.io/blogs/attention3/image/image_D5o3YxxVQq.png)
 
 怎么和我们之前写的不一样？拼接呢？怎么输入有两个？且听我一一解释
 
@@ -69,13 +69,13 @@ $$
 
 而concat的运算如下：
 
-![](https://charmin161.github.io/blogs/attention5/image/微信图片_20240411215731_udDTG24ylb.jpg)
+![](https://charmin161.github.io/blogs/attention3/image/微信图片_20240411215731_udDTG24ylb.jpg)
 
 在上面那种形式中，就不是用concat，而是公式中的相加。
 
 #### Deformable Attention
 
-![](https://charmin161.github.io/blogs/attention5/image/image_VueMq4VrWU.png)
+![](https://charmin161.github.io/blogs/attention3/image/image_VueMq4VrWU.png)
 
 $$
 \operatorname{DeformAttn}\left(\boldsymbol{z}_{q}, \boldsymbol{p}_{q}, \boldsymbol{x}\right)=\sum_{m=1}^{M} \boldsymbol{W}_{m}\left[\sum_{k=1}^{K} A_{m q k} \cdot \boldsymbol{W}_{m}^{\prime} \boldsymbol{x}\left(\boldsymbol{p}_{q}+\Delta \boldsymbol{p}_{m q k}\right)\right]
@@ -101,7 +101,7 @@ $$
 
 **要解决什么问题？**
 
-![](https://charmin161.github.io/blogs/attention5/image/image_cZThaRqQ11.png)
+![](https://charmin161.github.io/blogs/attention3/image/image_cZThaRqQ11.png)
 
 **改进attention结构**，ViT算的太多；Swin Transformer 手工设计的注意力区域，会漏掉重要信息；DCN针对周围九个位置学习偏差，之后采样矫正过的特征位置，但分别训练，训练难度较大。
 
@@ -109,7 +109,7 @@ $$
 
 **使用什么方法？**
 
-![](https://charmin161.github.io/blogs/attention5/image/image_2YqyreCRlc.png)
+![](https://charmin161.github.io/blogs/attention3/image/image_2YqyreCRlc.png)
 
 下采样得到参考点（reference points）→ 计算偏移点 → 通过双线性插值得到 $\widetilde x $→ 计算注意力机制
 
