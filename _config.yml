@@ -63,7 +63,17 @@ links:
 timezone: Asia/Shanghai          # IANA time-zone ID (China/Beijing is invalid)
 future: true                     # Render posts dated in the future
 highlighter: rouge               # Code highlighter; Rouge is default in MM
-# markdown: kramdown             # Jekyll default; uncomment to force
+markdown: kramdown             # Jekyll default; uncomment to force
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+  math_engine: mathjax           # 启用MathJax渲染数学公式
+  math_engine_opts:
+    preview: true                # 预览模式
+    line_numbers: false          # 关闭行号
 # pygments: true                 # Legacy option (Rouge supersedes this)
 
 
@@ -76,12 +86,12 @@ permalink: /:categories/:title    # e.g. /tech/my-post/
 # --------------------------------------------------
 #  KRAMDOWN (Markdown engine) SETTINGS
 # --------------------------------------------------
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
+# kramdown:
+#   auto_ids: true
+#   footnote_nr: 1
+#   entity_output: as_char
+#   toc_levels: 1..6
+#   enable_coderay: false
 
   # coderay:
   #   coderay_line_numbers:
@@ -126,6 +136,7 @@ plugins:
   - jekyll-feed          # Auto-generate RSS feed
   - jekyll-sitemap       # Auto-generate sitemap.xml
   - jekyll-seo-tag       # Adds SEO meta tags & JSON-LD
+  - kramdown-math-mathjax # 引入MathJax支持插件（需先安装gem）
 #   - jekyll-picture-tag   # Responsive images & WebP/AVIF
   # - jekyll-archives      # Year/month archive pages
 
