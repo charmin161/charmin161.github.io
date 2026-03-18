@@ -156,6 +156,6 @@ $q_i = [q_i(C) ,q_i(R)] = [xW_{dq}W_{qci}, xW_{dq}W_{qr}] = [c_{q}W_{qci},c_{q}W
 
 [MHA、MQA、GQA和MLA发展演变 - 知乎](https://zhuanlan.zhihu.com/p/17434772442 "MHA、MQA、GQA和MLA发展演变 - 知乎")
 
-[缓存与效果的极限拉扯：从MHA、MQA、GQA到MLA - 科学空间|Scientific Spaces](https://kexue.fm/archives/10091 "缓存与效果的极限拉扯：从MHA、MQA、GQA到MLA - 科学空间|Scientific Spaces")
+[缓存与效果的极限拉扯：从MHA、MQA、GQA到MLA - 科学空间](https://kexue.fm/archives/10091 "缓存与效果的极限拉扯：从MHA、MQA、GQA到MLA - 科学空间")
 
 
