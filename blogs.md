@@ -8,12 +8,6 @@ title: Blogs
 
 # LLM模型
 
-### 数据
-
-分词
-
-word embedding
-
 ### 模型
 
 transformer&#x20;
@@ -30,10 +24,6 @@ transformer&#x20;
 
 [【attention5】时序压缩与隐空间压缩MTLA](https://charmin161.github.io/blogs/attention5/attention5 "【attention5】时序压缩与隐空间压缩MTLA")
 
-
-### 训练infra
-
-### 训练过程
 
 #### 量化
 [量化](https://charmin161.github.io/blogs/quant/Quartet-MXFP4/Quartet-MXFP4 "量化")
