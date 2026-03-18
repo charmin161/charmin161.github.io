@@ -89,9 +89,10 @@ $$
 MQA和GQA，相对于MHA而言，其实也是一种低秩运算，将原本有n对的KV权重矩阵，只保留g对：
 
 $$
-MHA:[k_1,k_2,...,k_n,v_1,v_2,...v_n] = x[W_{k1},W_{k2},...W_{kn},W_{v1},W_{v2},...W_{vn}]
-
-\\GQA: [k_1,k_2,...,k_g,v_1,v_2,...v_g] = x[W_{k1},W_{k2},...W_{kg},W_{v1},W_{v2},...W_{vg}]
+\begin{aligned}
+\text{MHA: }&[k_1,k_2,...,k_n,v_1,v_2,...v_n] = x[W_{k1},W_{k2},...W_{kn},W_{v1},W_{v2},...W_{vn}] \\
+\text{GQA: }&[k_1,k_2,...,k_g,v_1,v_2,...v_g] = x[W_{k1},W_{k2},...W_{kg},W_{v1},W_{v2},...W_{vg}]
+\end{aligned}
 $$
 
 把这里的权重矩阵拼接起来，可以看到MHA 的shape为 $d \times 2d$，GQA的shape为 $d \times 2dg/n$，相对于原来的权重矩阵，这里就是一个降秩矩阵。
@@ -101,9 +102,11 @@ MLA在之后的处理与GQA有所不同：
 得到KV矩阵之后，GQA是把它**切分**，然后**复制**多份用于计算；这种切分与复制也是一种简单的线性变换，那么MLA干脆进行了线性变换：
 
 $$
-c = xW_c  (W_c \in \mathbb{R}^{d \times d_c}) 低秩
-\\k = cW_k (W_k \in \mathbb(R)^{d_c \times d_k}) 线性
-\\v = cW_v (W_v \in \mathbb(R)^{d_c \times d_v}) 线性
+\begin{aligned}
+&c = xW_c  (W_c \in \mathbb{R}^{d \times d_c}) 低秩  \\
+&k = cW_k (W_k \in \mathbb(R)^{d_c \times d_k}) 线性 \\
+&v = cW_v (W_v \in \mathbb(R)^{d_c \times d_v}) 线性
+\end{aligned}
 $$
 
 这如果像MHA一样，保留计算得到的kv，那就完全没有节省到，所以需要想办法，要是只需要保存 $c$不就很完美了么？
@@ -126,16 +129,18 @@ $$
 
 上面的想法很美好，但有一个问题，就是忽略了RoPE位置编码。目前的大模型中，主要在attention计算之前，对Q和K矩阵进行位置编码。
 
-即 $q_i k_i^T=RoPE(xW_{qi})RoPE(cW_{ki})^T $ &#x20;
+即 $q_i k_i^T=RoPE(xW_{qi})RoPE(cW_{ki})^T$ &#x20;
 
 这样就没法子化简了
 
 DeepSeek使用的方法是多条路：即Q和K多出一些维度专门来处理位置编码，当然为了减少cache，这里的K是共享的，具体来看公式：
 
 $$
-q_ik_i^T = [q_i(C),q_i(R)][k_i(C),k(R)]^T
-\\=q_i(C)k_i(C)^T + q_i(R)k(R)^T
-\\=xW_{cqi}c^T +RoPE(xW_{qri})RoPE(xW_{kr})^T 
+\begin{aligned}
+q_ik_i^T &= [q_i(C),q_i(R)][k_i(C),k(R)]^T \\
+&= q_i(C)k_i(C)^T + q_i(R)k(R)^T \\
+&= xW_{cqi}c^T + RoPE(xW_{qri})RoPE(xW_{kr})^T
+\end{aligned}
 $$
 
 这里 $q_i(R)和k(R)$就是多出来的维度，用于加入位置编码的，其维度为 $s \times d_r$, $d_r$取 $d_c/4$
