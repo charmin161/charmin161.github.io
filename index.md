@@ -15,6 +15,6 @@ I hold a Bachelor's degree in Automation and a Master's degree in Control Scienc
 - 2020.06 - 2023.07   **M.E**., Southeast University, Nanjing, Jiangsu, China<br>
 - 2019.09 - 2020.06   **B.E.**, Southeast University, Nanjing, Jiangsu, China<br>
 - 2017.09 - 2019.09   **Soldier**, Artillery, Jinzhou, Liaoning, China<br>
-- 2014.09 - 2011.09   **B.E.**, Southeast University, Nanjing, Jiangsu, China<br>
+- 2014.09 - 2017.09   **B.E.**, Southeast University, Nanjing, Jiangsu, China<br>
 
 ***
