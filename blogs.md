@@ -12,7 +12,7 @@ title: Blogs
 
 transformer&#x20;
 
-[【attention0】](https://charmin161.github.io/blogs/attention0/attention0 "【attention0】")
+[【attention0】自注意力与旋转编码](https://charmin161.github.io/blogs/attention0/attention0 "【attention0】")
 
 [【attention1】MHA、MQA、GQA和MLA](https://charmin161.github.io/blogs/attention1/attention1 "【attention1】MHA、MQA、GQA和MLA")
 
